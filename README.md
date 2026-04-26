@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# 🛍️ Catalog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and dynamic **Multi-Category Product Catalog** built with React.
+Browse products across Cars, Bikes, Phones, and Computers — with live search, category filtering, and detailed spec pages.
+This project is beginner-friendly, cleanly structured, and perfect for learning dynamic rendering, component design, and responsive layouts in React.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Website Link
+- 
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🗂️ Category Overview
 
-### `npm test`
+* Products are grouped and displayed by category on the home screen.
+* Each category has its own section with a label, icon, description, and item count.
+* Distinct accent colors per category make it easy to distinguish at a glance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔍 Search & Filter
 
-### `npm run build`
+* Live search bar filters products by name in real time.
+* Category filter pills let users narrow down to Cars, Bikes, Phones, or Computers.
+* Search and category filters work together simultaneously.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🃏 Product Cards
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Each card displays the product image, name, and a preview of up to 2 specs.
+* Skeleton loaders appear while images are loading.
+* Graceful fallback shown if an image fails to load.
+* Hover effects with a category-colored glow and zoom animation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📄 Item Detail Page
 
-### `npm run eject`
+* Clicking a card navigates to a dedicated detail page.
+* Displays the full product image, name, category badge, and all specifications.
+* Specs are rendered **dynamically** by iterating the `itemprops` array — no hardcoded field names.
+* Animated spec rows with staggered entry effects.
+* Sticky image panel on desktop, stacked layout on mobile.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📱 Fully Responsive
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Fluid grid layout adapts across mobile, tablet, and desktop.
+* Sticky header with blur backdrop on all screen sizes.
+* Breadcrumb navigation on desktop, condensed layout on mobile.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository:
+```bash
+git clone https://github.com/vinaypoddar2000/catalog.git
+cd catalog-app
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install dependencies:
+```bash
+npm install
+```
 
-### Code Splitting
+3. Start the development server:
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Open your browser and navigate to `http://localhost:3000`
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🛠️ Technologies Used
 
-### Making a Progressive Web App
+- **React 18**: UI framework
+- **Plain CSS + CSS Custom Properties**: Styling and theming
+- **Google Fonts (Syne + DM Sans)**: Typography
+- **JavaScript ES6+**: Core logic and dynamic rendering
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🙌 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contribute or suggest improvements!

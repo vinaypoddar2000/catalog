@@ -1,0 +1,29 @@
+.cat-pill {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 99px; padding: 8px 16px; cursor: pointer;
+  font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500;
+  color: var(--text-secondary); transition: all var(--transition); white-space: nowrap;
+}
+.cat-pill:hover {
+  border-color: color-mix(in srgb, var(--pill-color) 50%, transparent);
+  color: var(--text-primary);
+}
+.cat-pill--active {
+  background: color-mix(in srgb, var(--pill-color) 15%, transparent);
+  border-color: color-mix(in srgb, var(--pill-color) 60%, transparent);
+  color: var(--pill-color);
+}
+.cat-pill__icon { font-size: 14px; line-height: 1; }
+.cat-pill__label { line-height: 1; }
+.cat-pill__count {
+  font-size: 11px; background: rgba(255,255,255,0.08);
+  border-radius: 99px; padding: 2px 7px; font-weight: 400; color: var(--text-muted);
+}
+.cat-pill--active .cat-pill__count {
+  background: color-mix(in srgb, var(--pill-color) 20%, transparent);
+  color: var(--pill-color);
+}
+@media (max-width: 480px) {
+  .cat-pill { padding: 7px 12px; font-size: 12px; }
+}
